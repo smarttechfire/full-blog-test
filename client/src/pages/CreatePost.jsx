@@ -26,6 +26,8 @@ export default function CreatePost() {
 
   const navigate = useNavigate();
 
+  const url = "https://blog.smarttech.one";
+
   console.log(formData);
 
   const handleUploadImage = async () => {
@@ -70,7 +72,7 @@ export default function CreatePost() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch('/api/post/create',{
+      const res = await fetch(`${url}/api/post/create`,{
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
