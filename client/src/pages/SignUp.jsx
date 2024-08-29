@@ -8,7 +8,7 @@ export default function SignUp() {
   const [errorMessage, setErrorMessage] = useState(null);
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
-  const url = "https://blog.smarttech.one";
+  const url = "https://full-blog-test-backend.onrender.com";
 
   const handleChange = (e) =>{
     setFormData({...formData,[e.target.id]: e.target.value.trim()});
